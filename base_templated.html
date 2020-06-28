@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head style="font-family: Arial, Helvetica, sans-serif;font-size: 14px;color: #0b1335;">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DC Newsletter</title>
+  <!-- Designed by Sylvia Lian and developed by Jason Goh (apologies for style names I tried okay-->
+  <style type="text/css">
+  *{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#0b1335;
+  }
+  body {
+    background-color:#f2f2f2;
+    margin:0;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  p{
+    line-height:1.6;
+  }
+  .regulartext{
+    padding-right:70px;
+    padding-left:70px;
+    font-size:12px;
+  }
+  .eventtext{
+    padding-right:150px;
+    padding-left:150px;
+    font-size:12px;
+  }
+  .tableinner{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px auto;
+    width: 100%;
+    padding: 0px;
+  }
+  .eventbox{
+    border: #5f66da solid 3px;
+    border-radius: 2px;
+    width:340px;
+    font-size:12px;
+    padding:1px;
+    background-color:#f2f2f2;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .padder{
+    padding:15px;
+  }
+  .title{
+    font-size:22px;
+    font-weight:bold;
+    text-align: center;
+  }
+  #topbanner{
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+  }
+  #main {
+    width:100%;
+    background-color:#f2f2f2;
+    margin-top:0px;
+  }
+  #header{
+    padding:15px;
+    background-color:#fed54c;
+    font-size:15px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+  #topimg{
+    width:100%;
+  }
+
+  #maintable{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0b1335;
+    width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  #logostuff{
+    width:200px;
+    color:#4caae5;
+    font-size:7px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  #bottomtext{
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    font-size:8px;
+  }
+  .tdspacer{
+    height:50px;
+    width:640px;
+  }
+  .tdspacersmall{
+    height:30px;
+    width:640px;
+  }
+  .tdspacerlarge{
+    height:70px;
+    width:640px;
+  }
+  @media screen and (min-width: 640px) {
+    *{
+      max-width:640px;
+      margin-right: auto !important;
+      margin-left: auto !important;
+    }
+  }
+  @media screen and (max-width: 639px) {
+    *{
+      max-width: 560px !important;
+      margin-right: auto !important;
+      margin-left: auto !important;
+    }
+    .tableinner{
+      width: 560px !important;
+    }
+    .regulartext{
+      padding-left: 10px !important;
+      padding-right:10px !important;
+    }
+    .eventtext{
+      padding-left: 50px !important;
+      padding-right: 50px !important;
+    }
+    .eventbox{
+      width:200 !important;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    *{
+      max-width: 360px !important;
+      margin-right: auto !important;
+      margin-left: auto !important;
+    }
+    .tableinner{
+      width: 360px !important;
+    }
+    .regulartext{
+      padding-left: 10px !important;
+      padding-right:10px !important;
+    }
+    .eventtext{
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+    .eventbox{
+      width:200 !important;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    *{
+      max-width: 280px !important;
+      margin-right: auto !important;
+      margin-left: auto !important;
+    }
+    .tableinner{
+      width: 280px !important;
+    }
+    .regulartext{
+      padding-left: 10px !important;
+      padding-right:10px !important;
+    }
+    .eventtext{
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+    .eventbox{
+      width:200 !important;
+    }
+  }
+  @media screen and (max-width: 300px) {
+    *{
+      max-width: 240px !important;
+      margin-right: auto !important;
+      margin-left: auto !important;
+    }
+    .tableinner{
+      width: 240px !important;
+    }
+    .regulartext{
+      padding-left: 10px !important;
+      padding-right:10px !important;
+    }
+    .eventtext{
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+    }
+    .eventbox{
+      width:200 !important;
+    }
+  }
+</style>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+  <table id="maintable">
+    <tr>
+      <td>
+        <table id="header">
+          <tr>
+            <td><b><ins><a href="blank">View this email in the browser</a></ins></b></td>
+          </tr>
+        </table>
+        <table class="tableinner">
+          <tr>
+            <td><img src="assets/top_banner.png" alt="top_banner"></td>
+          </tr>
+        </table>
+        <table class="tableinner" style="background-color:#f2f2f2;">
+          <tr>
+            <td class="title">
+              <p>Monthly Newsletter Issue #<span mc:edit="issueNumber">N</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdspacer">
+            </td>
+          </tr>
+          <tr>
+            <td class="regulartext">
+              <span mc:edit="greetingMessage">
+                <p>Hi Drawers and Circlers!</p>
+                <p>This is dummy text for the DC Newsletter. How's everyone feeling at the beginning of semester? Did you have a good break?
+                  More importantly do you like our new look?</p>
+                  <p>We like to think we did that whole glow up thing in the that high school movie. We've got some great events lined up for you guys
+                    in the coming weeks.
+                  </p>
+                  <p>See you later</p>
+                  <p>G</p>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td class="tdspacer">
+              </td>
+            </tr>
+          </table>
+          <table class="tableinner" style="background-color:#fed54c;" mc:hideable>
+            <tr>
+              <td class="tdspacer">
+              </td>
+            </tr>
+            <tr>
+              <td class="title">
+                <p>Highlights</p>
+              </td>
+            </tr>
+            <tr mc:repeatable="highlightItem">
+              <td>
+                <table>
+                  <tr>
+                    <td class="tdspacersmall">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/placeholder_img.png" alt="placeholder_img"></td>
+                  </tr>
+                  <tr>
+                    <td class="tdspacersmall">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="eventtext" mc:edit="highlightDescription">
+                      <p>The quick brown fox jumps over the lazy dog</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="tdspacersmall">
+                    </td>
+                  </tr>
+                  <!--eventbox here-->
+                  <tr>
+                    <td>
+                      <table class="eventbox" mc:edit="highlightDetails" mc:hideable>
+                        <tr>
+                          <td colspan="2" class="padder">Date and Time: insert stuff here i'll figure it out</td>
+                        </tr>
+                        <tr>
+                          <td style="width:60%;"  class="padder">Location</td>
+                          <td style="width:40%;"  class="padder">Price</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="tdspacer">
+              </td>
+            </tr>
+          </table>
+          <table class="tableinner" style="background-color:#f2f2f2;" mc:hideable>
+            <tr>
+              <td class="tdspacer">
+              </td>
+            </tr>
+            <tr>
+              <td class="title">
+                <p>Regular Events</p>
+              </td>
+            </tr>
+            <tr mc:repeatable="regularEvent" mc:variant="regular event - Etch n Sketch">
+              <td>
+                <table>
+                  <tr>
+                    <td class="tdspacersmall">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="title">
+                      <p>Etch n Sketch</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="tdspacersmall">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="eventtext">
+                      <p>A basic description of a really cool event that we ALWAYS have</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="tdspacersmall">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table class="eventbox" mc:edit="">
+                        <tr>
+                          <td colspan="2" class="padder">Date and Time: insert stuff here i'll figure it out</td>
+                        </tr>
+                        <tr mc:edit>
+                          <td style="width:60%;" class="padder">Location</td>
+                          <td style="width:40%;"  class="padder">Price</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr mc:repeatable="regularEvent" mc:variant="regular event - life drawing">
+            <td>
+              <table>
+                <tr>
+                  <td class="tdspacersmall">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="title">
+                    <p>Life Drawing</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tdspacersmall">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="eventtext">
+                    <p>A basic description of a really cool event that we ALWAYS have</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tdspacersmall">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table class="eventbox" mc:edit="">
+                      <tr>
+                        <td colspan="2" class="padder">Date and Time: insert stuff here i'll figure it out</td>
+                      </tr>
+                      <tr mc:edit>
+                        <td style="width:60%;" class="padder">Location</td>
+                        <td style="width:40%;"  class="padder">Price</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr mc:repeatable="regularEvent" mc:variant="regular event - generic">
+          <td>
+            <table>
+              <tr>
+                <td class="tdspacersmall">
+                </td>
+              </tr>
+              <tr>
+                <td class="title">
+                  <p>Generic Event</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="tdspacersmall">
+                </td>
+              </tr>
+              <tr>
+                <td class="eventtext">
+                  <p>A basic description of a really cool event that we ALWAYS have</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="tdspacersmall">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table class="eventbox" mc:edit="">
+                    <tr>
+                      <td colspan="2" class="padder">Date and Time: insert stuff here i'll figure it out</td>
+                    </tr>
+                    <tr mc:edit>
+                      <td style="width:60%;" class="padder">Location</td>
+                      <td style="width:40%;"  class="padder">Price</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <td class="tdspacerlarge">
+        </td>
+      </tr>
+    </table>
+    <table class="tableinner" style=style="background-color:#f2f2f2;">
+      <tr>
+        <td>
+          <table id="logostuff">
+            <tr>
+              <td rowspan="2"><img src="assets/dc_logo.png" width="64" alt="dc_logo"></td>
+              <td colspan="2">DRAWING CIRCLE 2017<br>FOLLOW US ON</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.facebook.com/utsdrawingcircle/"><img src="assets/fb_logo.png" width="32" alt="fb_logo"></a></td>
+              <td><a href="http://discord.me/drawingcircle"><img src="assets/discord_logo.png" height="32" alt="discord_logo"></a></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="assets/bottom_banner.png" alt="bottom_banner"></td>
+      </tr>
+    </table>
+    <table class="tableinner" style="background-color:#fed54c;">
+      <tr>
+        <td>
+          <table id="bottomtext">
+            <tr>
+              <td>
+                <p style="text-align:left;"> Want to stop receiving emails? <a href="*|UNSUB|*">Unsubscribe</a></p>
+              </td>
+              <td>
+                <p>*|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*</p>
+              </td>
+              <td>
+                <p>*|LIST:ADDRESS|*</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
